@@ -1,0 +1,2 @@
+class BeaversController < ApplicationController
+end

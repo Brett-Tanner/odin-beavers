@@ -1,0 +1,2 @@
+class Beaver < ApplicationRecord
+end
