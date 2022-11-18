@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_11_18_041440) do
+ActiveRecord::Schema[7.0].define(version: 2022_11_18_123444) do
   create_table "beavers", force: :cascade do |t|
     t.string "name"
     t.integer "age"
@@ -18,6 +18,8 @@ ActiveRecord::Schema[7.0].define(version: 2022_11_18_041440) do
     t.integer "hunger"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "fav_food"
+    t.string "place_of_residence"
   end
 
 end
