@@ -1,4 +1,13 @@
+<%= link_to "Home", root_path %>
+
+<% @beaver.errors.full_messages.each do |message| %>
+  <div><%= message %></div>
+<% end %>
+
 <%= form_with model: @beaver do |form| %>
+    <%= image_tag @beaver.url %>
+    <%= form.hidden_field :url, value: @beaver.url %>
+
     <div class="beaver_form_field">
         <%= form.label :name %>
         <%= form.text_field :name %>
