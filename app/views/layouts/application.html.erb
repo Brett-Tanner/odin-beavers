@@ -11,12 +11,25 @@
   </head>
 
   <body>
-    <% flash.each do |type, msg| %>
-      <div>
-        <%= msg %>
-      </div>
-    <% end %>
+    <div id="messages">
+      <% flash.each do |type, msg| %>
+        <div>
+          <%= msg %>
+        </div>
+      <% end %>
+    </div>
 
-    <%= yield %>
+    <div id="nav_links">
+      <%= link_to root_path do %>
+        <h2>Home</h2>
+      <% end %>
+      <%= link_to new_beaver_path do %>
+        <h2>Add a Beaver!</h2>
+      <% end %>
+    </div>
+
+    <div id="beaver_lake">
+      <%= yield %>
+    </div>
   </body>
 </html>

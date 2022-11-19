@@ -10,7 +10,7 @@ Beaver.create ([{
   url: "https://live.staticflickr.com/5499/30224200191_8f3a2d358b_h.jpg"
 },
 {
-  name: "Shimmy",
+  name: "Shimmy (in beaver cosplay)",
   age: 1,
   cuteness: max,
   hunger: 4,

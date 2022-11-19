@@ -14,7 +14,78 @@
  *= require_self
  */
 
+body {
+    background-color: #a16207;
+}
+
 img {
     max-width: 20vw;
     max-height: 20vw;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+#nav_links {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10vw;
+    margin: 2vw;
+    background-color: #d97706;
+}
+
+#nav_links a {
+    flex-basis: 20vw;
+    text-align: center;
+}
+
+#nav_links a:hover {
+    background-color: #b45309;
+}
+
+#beaver_lake {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+    margin: 2vw;
+}
+
+.beaver {
+    flex: 1 1 40vw;
+    border-radius: 2vw;
+    background-color: #d97706;
+}
+
+.beaver:hover {
+    box-shadow: 0 0 2vw #b45309, 0 0 2vw #b45309;
+}
+
+.beaver > div {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    flex-flow: column wrap;
+    gap: 1vw;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#beaver_options {
+    flex-basis: 100vw;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10vw;
 }

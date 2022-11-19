@@ -1,6 +1,5 @@
-<%= link_to "Home", root_path %>
-
 <%= render @beaver %>
-
-<%= link_to "Edit Beaver", edit_beaver_path, method: :get %>
-<%= link_to "Destroy Beaver!", beaver_path(@beaver), data: {turbo_method: :delete, turbo_confirm: "Are you sure you want to murder a beaver? ;("} %>
+<div id="beaver_options">
+    <%= link_to "Edit Beaver", edit_beaver_path, method: :get %>
+    <%= link_to "Destroy Beaver!", beaver_path(@beaver), data: {turbo_method: :delete, turbo_confirm: "Are you sure you want to murder a beaver? ;("} %>
+</div>

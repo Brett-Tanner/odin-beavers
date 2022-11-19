@@ -1,7 +1,11 @@
-<h1><%= link_to beaver.name, beaver_path(beaver) %></h1>
-<%= image_tag beaver.url %>
-<p>Age: <%= beaver.age %></p>
-<p>Cuteness: <%= beaver.cuteness %></p>
-<p>Hunger: <%= beaver.hunger %></p>
-<p>Favourite food: <%= beaver.fav_food %></p>
-<p>Place of residence: <%= beaver.place_of_residence %></p>
+<%= link_to beaver_path(beaver), class: "beaver" do %>
+    <div>
+        <h1><%= beaver.name %></h1>
+        <%= image_tag beaver.url %>
+        <p>Age: <%= beaver.age %></p>
+        <p>Cuteness: <%= beaver.cuteness %></p>
+        <p>Hunger: <%= beaver.hunger %></p>
+        <p>Favourite food: <%= beaver.fav_food %></p>
+        <p>Place of residence: <%= beaver.place_of_residence %></p>
+    </div>
+<% end %>
