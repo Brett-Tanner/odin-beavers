@@ -10,7 +10,7 @@ Beaver.create ([{
 },
 {
   name: "Shimmy",
-  age: 0.2,
+  age: 1,
   cuteness: max,
   hunger: 4,
   fav_food: "Viktoria's hair",

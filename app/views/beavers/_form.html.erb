@@ -1,0 +1,33 @@
+<%= form_with model: @beaver do |form| %>
+    <div class="beaver_form_field">
+        <%= form.label :name %>
+        <%= form.text_field :name %>
+    </div>
+
+    <div class="beaver_form_field">
+        <%= form.label :age %>
+        <%= form.text_field :age %>
+    </div>
+
+    <div class="beaver_form_field">
+        <%= form.label :cuteness %>
+        <%= form.text_field :cuteness %>
+    </div>
+
+    <div class="beaver_form_field">
+        <%= form.label :hunger %>
+        <%= form.text_field :hunger %>
+    </div>
+
+    <div class="beaver_form_field">
+        <%= form.label :fav_food %>
+        <%= form.text_field :fav_food %>
+    </div>
+
+    <div class="beaver_form_field">
+        <%= form.label :place_of_residence %>
+        <%= form.text_field :place_of_residence %>
+    </div>
+
+    <%= form.submit "Submit Beaver" %>
+<% end %>
