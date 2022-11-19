@@ -1,6 +1,11 @@
 class BeaversController < ApplicationController
   def index
     @beavers = Beaver.all
+
+    respond_to do |format|
+      format.html
+      format.json {render :json => @beavers}
+    end
   end
 
   def new
@@ -21,6 +26,11 @@ class BeaversController < ApplicationController
 
   def show
     @beaver = Beaver.find(params[:id])
+
+    respond_to do |format|
+      format.html
+      format.json {render :json => @beaver}
+    end
   end
 
   def destroy
